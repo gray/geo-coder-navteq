@@ -252,6 +252,7 @@ sub _bdom {
         unless ($end) {
             $s[-1] = $encode_table[ $decode_table{$s[-1]} | 15 ];
         }
+
         return join '', @s;
     }
 }
@@ -362,11 +363,11 @@ Accessor for the UserAgent object.
 
 =head1 SEE ALSO
 
-L<http://msdn.microsoft.com/en-us/library/ff701713.aspx>
+L<http://www.nn4d.com/site/global/build/manuals/ajaxapiintroduction.jsp>
 
 L<Geo::Coder::Bing>, L<Geo::Coder::Bing::Bulk>, L<Geo::Coder::Google>,
 L<Geo::Coder::Mapquest>, L<Geo::Coder::Multimap>, L<Geo::Coder::OSM>,
-L<Geo::Coder::TomTom>, L<Geo::Coder::Yahoo>
+L<Geo::Coder::PlaceFinder>, L<Geo::Coder::TomTom>, L<Geo::Coder::Yahoo>
 
 =head1 REQUESTS AND BUGS
 
