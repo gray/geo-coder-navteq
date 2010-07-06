@@ -9,7 +9,7 @@ use LWP::UserAgent;
 use URI;
 use XML::Simple ();
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 $VERSION = eval $VERSION;
 
 sub new {
@@ -314,8 +314,8 @@ Each location result is a hashref; a typical example looks like:
     {
         Coordinate => {
             Elevation => "0.0",
-            Latitude  => "2513.068359375",
-            Longitude => "-5258.33251953125"
+            Latitude  => "41.88447265625",
+            Longitude => "-87.6388753255208"
         },
         Hierarchy       => 6,
         PropertiesMajor => {

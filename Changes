@@ -1,4 +1,8 @@
 Revision history for Geo-Coder-Navteq
 
-0.01  
+0.02  Tue Jul 6 04:04:07 UTC 2010
+    - Corrected example in pod to display coordinates in decimal degrees,
+      not decimal minutes.
+
+0.01  Tue Jul 6 03:29:28 UTC 2010
     - Initial distribution.
