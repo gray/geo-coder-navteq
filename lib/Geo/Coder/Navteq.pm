@@ -3,7 +3,7 @@ package Geo::Coder::Navteq;
 use strict;
 use warnings;
 
-use Carp qw(carp croak);
+use Carp qw(croak);
 use Encode ();
 use LWP::UserAgent;
 use URI;
