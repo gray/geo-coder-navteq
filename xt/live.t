@@ -33,8 +33,8 @@ my $geocoder = Geo::Coder::Navteq->new(
     );
 }
 {
-    my @locations = $geocoder->geocode('Main Street');
-    ok(@locations > 1, 'there are many Main Streets');
+    my @locations = $geocoder->geocode('Main Street, Los Angeles, CA');
+    ok(@locations > 1, 'there are many Main Streets in Los Angeles');
 }
 {
     my $address = qq(Albrecht-Th\xE4r-Stra\xDFe 6, 48147 M\xFCnster, Germany);
