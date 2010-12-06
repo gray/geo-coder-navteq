@@ -404,7 +404,7 @@ L<http://rt.cpan.org/Public/Dist/Display.html?Name=Geo-Coder-Navteq>
 
 =item * Search CPAN
 
-L<http://search.cpan.org/dist/Geo-Coder-Navteq>
+L<http://search.cpan.org/dist/Geo-Coder-Navteq/>
 
 =back
 
