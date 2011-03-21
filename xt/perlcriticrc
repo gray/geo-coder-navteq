@@ -14,10 +14,9 @@ severity = 5
 [TestingAndDebugging::RequireUseWarnings]
 severity = 5
 
+[-TestingAndDebugging::ProhibitNoStrict]
+[-BuiltinFunctions::ProhibitStringyEval]
+
 # requires Regexp::Parser
 [RegularExpressions::ProhibitUnusedCapture]
 severity = 5
-
-[-TestingAndDebugging::ProhibitNoStrict]
-[-BuiltinFunctions::ProhibitStringyEval]
-[-ValuesAndExpressions::ProhibitLeadingZeros]
