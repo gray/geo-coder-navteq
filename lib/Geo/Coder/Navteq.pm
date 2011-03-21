@@ -149,6 +149,8 @@ sub _authenticate {
     return unless $data->{'soapenv:Body'}{'tns:getMap24ApplicationResponse'}
         ->{GetMap24ApplicationResponse};
 
+    $self->{auth_time} = time;
+
     return 1;
 }
 
