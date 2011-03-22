@@ -288,8 +288,8 @@ functionality of the Navteq MapTP AJAX API.
         'Your MapTP AJAX API application key'
     )
     $geocoder = Geo::Coder::Navteq->new(
-        key   => 'Your MapTP AJAX API application key',
-        debug => 1,
+        appkey => 'Your MapTP AJAX API application key',
+        debug  => 1,
     )
 
 Creates a new geocoding object.
