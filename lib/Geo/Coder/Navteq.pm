@@ -20,12 +20,9 @@ sub new {
 
     my $self = bless \ %params, $class;
 
-    if ($params{ua}) {
-        $self->ua($params{ua});
-    }
-    else {
-        $self->{ua} = LWP::UserAgent->new(agent => "$class/$VERSION");
-    }
+    $self->ua(
+        $params{ua} || LWP::UserAgent->new(agent => "$class/$VERSION")
+    );
 
     if ($self->{debug}) {
         my $dump_sub = sub { $_[0]->dump(maxlength => 0); return };
@@ -36,7 +33,7 @@ sub new {
         $self->ua->default_header(accept_encoding => 'gzip,deflate');
     }
 
-    # Each appkey has this url aautomatically added on registration.
+    # Each appkey has this url automatically added on registration.
     $self->{url} ||= 'http://localhost';
 
     return $self;
